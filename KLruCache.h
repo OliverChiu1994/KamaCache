@@ -219,7 +219,7 @@ public:
     }
 
 private:
-    int                                     k_; // 进入缓存队列的评判标准
+    int k_; // 进入缓存队列的评判标准
     std::unique_ptr<KLruCache<Key, size_t>> historyList_; // 访问数据历史记录(value为访问次数)
 }; 
 

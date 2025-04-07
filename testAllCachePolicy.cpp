@@ -1,3 +1,4 @@
+#include <array>
 #include <iostream>
 #include <string>
 #include <chrono>
@@ -142,7 +143,7 @@ void testWorkloadShift() {
     std::cout << "\n=== 测试场景3：工作负载剧烈变化测试 ===" << std::endl;
     
     const int CAPACITY = 4;            
-    const int OPERATIONS = 80000;      
+    const int OPERATIONS = 10000;      
     const int PHASE_LENGTH = OPERATIONS / 5;
     
     KamaCache::KLruCache<int, std::string> lru(CAPACITY);
